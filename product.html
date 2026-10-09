@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css" integrity="sha384-CfCrinSRH2IR6a4e6fy2q6ioOX7O6Mtm1L9vRvFZ1trBncWmMePhzvafv7oIcWiW" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="icon" href="images/org.svg">
+    <title>store|product</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+
+</head>
+<body>
+    
+    
+    <header>
+        <div class="top-header py-2">
+            <div class="container">
+                  <div class="row">   
+                <div class=" col-6 col-md-4">
+                    <a href="">
+                        <img width="100px" src="images/photo_2026-09-14_18-01-53.jpg" alt="logo">
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 d-flex align-items-center alert alert-censter alert alert-saccess alert alert-auccess">
+                    <input class="form-control" type="text" placeholder="اكتب اسم المنتج للبحث عنه">
+                </div>
+                <div class="col-md-4 left-header d-flex d-none  d-lg-flex align-items-center alert alert-censter alert alert-saccess alert alert-auccess justify-cntent-end">
+                    <a class="btn " data-bs-toggle="offcanvas" href="#cart" role="button" aria-controls="offcanvasExample">
+                        <span>سلة المشتريات</span>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                    <a class="btn " data-bs-toggle="offcanvas" href="#login" role="button" aria-controls="offcanvasExample">
+                        <span>تسجيل الدخول</span>
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                    <a href="">
+                        <span>المفضلة</span>
+                        <i class="fa-solid fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+            </div>
+        
+        </div>
+        <div class="buttom-header">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary b-nav">
+  <div class="container">
+    <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div>
+     <button class="navbar-toggler menu-icon" type="button"data-bs-toggle="offcanvas" href="#login" >
+      <span class="fa-solid fa-user"></span>
+    </button>   
+    <button class="navbar-toggler menu-icon" type="button"data-bs-toggle="offcanvas" href="#cart">
+      <span class="fa-solid fa-cart-shopping"></span>
+    </button>   
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="category.html">منتجات عناية بالبشرة</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="category.html">منتجات طبيعية</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="category.html">منتجات  للنضارة</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="category.html">منتجات  تجميلية</a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="category.html">منتجات عناية المغربية</a>
+        </li>
+        
+       
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+        </div>
+    </header>
+
+    
+
+    
+<!-- cart  -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="cart" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="cart">سلة المشتريات</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+   <div class="row row-cols-1 row-mini-cart">
+    <div class="col mini-cart d-flex align-items-center alert alert-censter alert alert-saccess alert alert-auccess gap-3">
+      <img class="img-fluid w-25" src="images/products/photo_2026-09-18_18-21-29.jpg" alt="">
+      <p>مرطب تيغولين</p>
+       <div class="btn-group" role="group" aria-label="Basic outlined example">
+  <button type="button" class="btn btn-outline-success">+</button>
+  <button type="button" class="btn btn-outline-success">1</button>
+  <button type="button" class="btn btn-outline-success">-</button>
+</div>
+
+    </div>
+     <div class="col mini-cart d-flex align-items-center alert alert-censter alert alert-saccess alert alert-auccess gap-3">
+      <img class="img-fluid w-25" src="images/products/photo_2026-09-18_18-21-34.jpg" alt="">
+      <p>سيروم تيغولين</p>
+       <div class="btn-group" role="group" aria-label="Basic outlined example">
+  <button type="button" class="btn btn-outline-success">+</button>
+  <button type="button" class="btn btn-outline-success">1</button>
+  <button type="button" class="btn btn-outline-success">-</button>
+</div>
+
+    </div>
+
+     <div class="col mini-cart d-flex align-items-center alert alert-censter alert alert-saccess alert alert-auccess gap-3">
+      <img class="img-fluid w-25" src="images/products/photo_2026-09-18_18-21-39.jpg" alt="">
+      <p>كريم حب الشباب</p>
+       <div class="btn-group" role="group" aria-label="Basic outlined example">
+  <button type="button" class="btn btn-outline-success">+</button>
+  <button type="button" class="btn btn-outline-success">1</button>
+  <button type="button" class="btn btn-outline-success">-</button>
+</div>
+
+    </div>
+
+     <div class="col mini-cart d-flex align-items-center alert alert-censter alert alert-saccess alert alert-auccess gap-3">
+      <img class="img-fluid w-25" src="images/products/photo_2026-09-18_18-21-44.jpg" alt="">
+      <p>واقي شمسي</p>
+       <div class="btn-group" role="group" aria-label="Basic outlined example">
+  <button type="button" class="btn btn-outline-success">+</button>
+  <button type="button" class="btn btn-outline-success">1</button>
+  <button type="button" class="btn btn-outline-success">-</button>
+</div>
+
+    </div>
+
+
+   </div>
+   <div class="d-flex flex-column gap-1 mt-2">
+    <p class="alert alert-success ">مجموع المنجات 200$ فقط</p>
+      <button class="btn btn-success">عرض السلة</button>
+      <button class="btn btn-primary">اتمام الطلب</button>
+    
+   </div>
+
+  </div>
+</div>
+<!-- end cart  -->
+ <!-- login -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="login" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="login">تسجيل الدخول</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+
+    <form>
+  <div class="mb-3">
+    <label for="email" class="form-label">البريد الالكتروني</label>
+    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+    
+  </div>
+  <div class="mb-3">
+    <label for="pass" class="form-label">كلمة المرور</label>
+    <input type="password" class="form-control" id="pass">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="data">
+    <label class="form-check-label" for="data">تذكر بياناتي</label>
+  </div>
+  <button type="submit" class="btn btn-success w-100">تسجيل دخول</button>
+</form>
+<div class="alert alert-success m-2 forget">
+  <a href="">انقر هنا في حال نسيت كلمة المرور الخاصة بك</a>
+</div>
+<hr>
+<div class="text-center alert alert-censter alert alert-saccess alert alert-auccess">
+  <i class="fa-regular fa-user fa-3x"></i>
+  <p>لا يوجد لديك حساب؟</p>
+  <a href="" class="btn btn-primary w-100">انشاء حساب جديد</a>
+</div>
+</div>
+
+  </div>
+  </div>
+    <!-- end login  -->
+     <!-- container  -->
+     <div class="container p-3">
+
+        <div class="row justify-cntent-end">
+          <div class="col-md-4 mr-imag">
+
+            <div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators img-car">
+    <img src="images/product.html/Gemini_Generated_Image_3ccw73ccw73ccw73.jpg" alt="" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active img-cr" >
+    <img src="images/product.html/Gemini_Generated_Image_83yu7483yu7483yu.jpg" alt=""  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="img-cr">
+    <img src="images/product.html/Gemini_Generated_Image_mupfw7mupfw7mupf.jpg" alt=""data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="img-cr" >
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/product.html/Gemini_Generated_Image_3ccw73ccw73ccw73.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/product.html/Gemini_Generated_Image_83yu7483yu7483yu.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/product.html/Gemini_Generated_Image_mupfw7mupfw7mupf.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+          </div>
+          <div class="col-md-7 ">
+            <img width="200px" height="80px" src="images/photo_2026-09-14_18-01-53-removebg-preview-removebg-preview.png" alt="">
+            <h2 class="section-title">مرطب تيغولين</h2>
+            <p class="product-disc"> ترطيب عميق و بشرة براقة و ترطيب دائم و يتكون من خلاصات طبيعية</p>
+            <div class="quick-review">
+              <span>تقييم عملائنا</span>
+              <div class="star d-inline-flex">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                     <div class="price">
+                      <span class="">15$</span>
+                      <span class="">10$</span>
+                     </div>
+                     <div class="btns d-flex gap-3 mt-2">
+                    
+                        <div class="btn-group" role="group" aria-label="Basic outlined example">
+  <button type="button" class="btn btn-outline-success">-</button>
+  <button type="button" class="btn btn-outline-success">1</button>
+  <button type="button" class="btn btn-outline-success">+</button>
+</div>
+        
+                      <div>
+                        <button class="btn btn-danger">اضف الى السلة</button>
+                        <button class="btn btn-success">شراء الان</button>
+                      </div>
+                     </div>
+                     <hr>
+                     <div class="garygory">
+                      <span>التصنيفات:</span>
+                      <a href="category.html">عناية بالبشرة</a>
+                     </div>
+                     <div class="share">
+                      <span>للمشاركة:</span>
+                      <div class="share-icon d-inline-flex gap-2">
+                        <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                      </div>
+                     </div>
+                    
+
+            </div>
+
+          </div>
+        </div>
+
+     </div>
+<div class="container">
+      <!-- tabs -->
+              <ul class="nav nav-tabs my-tab">
+  
+  <li class="nav-item">
+    <a class="nav-link  " data-bs-toggle="tab" href="#detail">تفاصيل المنتج</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-bs-toggle="tab" href="#op">اراء العملاء</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link " data-bs-toggle="tab" href="#use" >تعليمات الاستخدام</a>
+  </li>
+</ul>
+<!-- end tabs  -->
+<!-- content  -->
+ <div class="tab-content">
+    <div class="tab-pane fade mt-5 show active" id="detail">
+      <div class="row row-cols-1 row-cols-md-2 mt-3">
+        <div class="col">
+          <p>يتكون مرطب اليدين من تركيبة متوازنة تهدف إلى تغذية البشرة وحمايتها من الجفاف، وتعتمد فعاليته على الدمج بين عدة مكونات رئيسية:</p>
+          <p>​المكونات المرطبة (Humectants)
+تعمل هذه المكونات كالمغناطيس الذي يجذب الرطوبة من الهواء والطبقات الداخلية للبشرة إلى الطبقة الخارجية. ومن أبرزها الجليسرين، وحمض الهيالورونيك، واليوريا، والصبار؛ وتساعد جميعها في إبقاء الجلد ناعماً ومرناً.</p>
+          <p>​المكونات المطرية (Emollients)
+تختص هذه المواد بملء الفراغات والشقوق بين خلايا الجلد الجافة، مما يمنح اليدين ملمساً ناعماً فورياً. وتشتمل عادةً على الزيوت النباتية مثل زيت الأرجان، وزيت الجوجوبا، وزيت اللوز الحلو، إضافة إلى السكوالان.</p>
+          <p>المكونات الحابسة للرطوبة (Occlusives)
+تشكل هذه المواد طبقة عازلة وخفيفة على سطح الجلد لمنع تبخر الماء وحماية اليدين من العوامل الخارجية كالهواء الجاف والمواد الكيميائية. من أشهرها زبدة الشيا، وزبدة الكاكاو، والفازلين، وشمع النحل</p>
+          <p>المغنيات والمواد المرممة
+تضاف لتعزيز صحة الجلد وترميم الحاجز الواقي للبشرة، مثل السيراميد الذي يعيد بناء غشاء الجلد، والنياسيناميد (فيتامين B3) الذي يهدئ التهيج، إضافة إلى فيتامين E المستعمل كمضاد للأكسدة لحماية الخلايا من التلف</p>
+
+        </div>
+
+        <div class="col">
+          <img class="img-fluid" src="images/product.html/photo_2026-10-01_18-37-18.jpg" alt="">
+
+        </div>
+      </div>
+
+
+    </div>
+    
+    <div class="tab-pane fade mt-5" id="op">
+    <div class="row row-cols-1 row-cols-md-2">
+      <div class="col">
+        <h3>يسعدنا ابداء رايكم</h3>
+        <form action="" class="m-3">
+          <label class="form-label in-name" for="">الاسم</label>
+          <input type="text" class="form-control" placeholder="ادخل الاسم رجاء" required>
+        </form>
+        <form action=""class="m-3">
+          <label class="form-label in-name" for="">الايميل</label>
+          <input  class="form-control" type="email" placeholder="ادخل الايميل رجاء" required>
+        </form>
+         <form action="" class="m-3">
+          <label class="form-label in-name" for="">يرجى ابداء رايك:</label>
+          <textarea name="" id="" rows="4" class="form-control"></textarea>
+        </form>
+        <form action="" class="m-3">
+          <input class="btn btn-success w-100" type="submit" required value="ارسال">
+        </form>
+      </div>
+
+      <div class="col">
+        <h3>تقييم العملاء الاكارم:</h3>
+        <h3 class="d-flex gap-1 align-items-center">4.9 
+           <div class="star">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+        </h3>
+        <div class="d-flex align-items-center gap-3 mt-3">
+          <span>5 <i class=" fa-solid fa-star"></i></span>
+          <div class="progress flex-grow-1" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width:95%"></div>
+</div>
+        </div>
+
+         <div class="d-flex align-items-center gap-3 mt-3">
+          <span>4<i class=" fa-solid fa-star"></i></span>
+          <div class="progress flex-grow-1" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" style="width:85%"></div>
+</div>
+        </div>
+
+         <div class="d-flex align-items-center gap-3 mt-3">
+          <span>3 <i class=" fa-solid fa-star"></i></span>
+          <div class="progress flex-grow-1" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width:80%"></div>
+</div>
+        </div>
+
+         <div class="d-flex align-items-center gap-3 mt-3">
+          <span>4 <i class=" fa-solid fa-star"></i></span>
+          <div class="progress flex-grow-1" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width:75%"></div>
+</div>
+        </div>
+
+         <div class="d-flex align-items-center gap-3 mt-3">
+          <span>5 <i class=" fa-solid fa-star"></i></span>
+          <div class="progress flex-grow-1" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width:60%"></div>
+</div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+
+    <div class="tab-pane fade mt-5" id="use">
+   <div class="row row-cols-1 row-cols-md-2">
+    <div class="col">
+      <h2 class="section-title">تعليمات الاستخدام:</h2>
+      <h3>1.تعليمات الاستخدام:</h3>
+      <p>​غسل اليدين: اغسل يديك بالماء الفاتر وصابون لطيف، ثم جففهما بلطف باستخدام منشفة ناعمة مع ترك القليل من الرطوبة على البشرة</p>
+      <p>​وضع الكمية المناسبة: ضع كمية بحجم حبة البازلاء (أو نقطة صغيرة) من الكريم على ظهر إحدى اليدين</p>
+      <p>التوزيع: وزّع المرطب بدعك ظهري اليدين معاً أولاً (لأن ظهر اليد هو الأكثر عرضة للجفاف)، ثم وزّع المتبقي على الكفين والأصابع</p>
+      <p>​التدليك والعناية التفصيلية: دلك المرطب جيداً بين الأصابع، وحول الأظافر، والمناصل (عقل الأصابع)، وصولاً إلى المعصم حتى يمتصه الجلد بالكامل</p>
+      <h3>نصائح اضافية</h3>
+      <p>التوقيت الأفضل: يُفضل استخدام المرطب مباشرة بعد غسل اليدين أو الاستحمام لحبس الرطوبة داخل البشرة، وقبل النوم ليعمل على تجديد البشرة طوال الليل.</p>
+      <p>​التكرار: يوصى بتطبيقه من 3 إلى 4 مرات يومياً، أو كلما شعرت بجفاف في يديك</p>
+    </div>
+
+    <div class="col">
+    <img class="img-fluid" src="images/product.html/photo_2026-10-01_20-04-26.jpg" alt="">
+    </div>
+
+   </div>
+    </div>
+ <!-- end content  -->
+
+     </div>
+     </div>
+     <!-- end container  -->
+      
+
+
+     <!-- foooter -->
+           <footer>
+            <div class="container-fluid">
+              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+                <div class="cols first-f">
+                  <img width="180px" src="images/photo_2026-09-14_18-01-53-removebg-preview-removebg-preview.png" alt="logo">
+                  <p>شركة لمنتجات طبيعية للعناية بالبشرة و الحصول على جمال طبيعي و بشرة نضرة</p>
+                  <ul class="navbar-nav">
+                    <li ><i class="fa-solid fa-location-dot"></i>موقعنا</li>
+                    <li > <i class="fa-solid fa-phone"></i>الهاتف</li>
+                    <li > <i class="fa-solid fa-envelope"></i>الايميل:@raghad.gmail.com</li>
+                  </ul>
+                </div>
+
+                <div class="col twice-f">
+                  <h3>اهم الروابط:</h3>
+                  <ul class="navbar-nav">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="category.html">منتجات طبيعية</a></li>
+                    <li><a href="category.html">منتجات تجميلية</a></li>
+                    <li><a href="category.html">منتجات عناية مغربية</a></li>
+                  </ul>
+                </div>
+
+                <div class="col third-f">
+                  <h3>النشرة البريدية</h3>
+                  <p>شركة تجارية متخصصة في منتجات  العناية بالبشرة و الشعر و العناية المغربية</p>
+                  <form action="">
+                    <input type="email" placeholder="ادخل الايميل" class="form-control">
+                  </form>
+                  <button class="btn btn-success ">اشترك الان</button>
+                </div>
+              </div>
+            </div>
+           </footer>
+           <!-- end footer  -->
+
+           
+<!-- first  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+<!-- end jcuery -->
+ <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    
+    <!-- end isotope  -->
+      <!-- first swipper       -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+     <!-- end swipper  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>   
+    <script href="js/scribt.js"></script>
+
+
+</body>
